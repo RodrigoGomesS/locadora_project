@@ -16,50 +16,54 @@ Abra o projeto no terminal e execute os comandos:
 
 ## Endpoints:
 
-## Mensagem de Bem vindo
+### Mensagem de Bem vindo
 * **Endpoint:** http://localhost:3000
 * **MÉTODO:** GET
 
-## Busca filmes
+### Busca filmes
 * **Endpoint:** http://localhost:3000/filmes
 * **MÉTODO:** GET
 
-## Busca filmes por genêro
+### Busca filmes por genêro
 * **Endpoint:** http://localhost:3000/filmes/:generoId
 * **MÉTODO:** GET
+
 **Aviso:** No lugar de ":generoId", passar o id do genêro
 
-## Criar filme
+### Criar filme
 * **Endpoint:** http://localhost:3000/filmes
 * **MÉTODO:** POST
+
 **Aviso:** No corpo da requisição, passar um json com os parametros nome e genero_id,
            nome de filmes não pode ser recadastrado.
 
-    **Exemplo:**
+    Exemplo:
 
     {
         "nome": "Nome do filme",
         "genero_id": 2
     }
 
-## Atualizar nome do filme
+### Atualizar nome do filme
 
 * **Endpoint:** http://localhost:3000/filmes/:filmeId
 * **MÉTODO:** PUT
+
 **Aviso:** No endpoint ":filmeId" deve ser substituido pelo id do filme que vai ser atualizado.
            No corpo da requisição, passar um json com o parametro nome,
            nome de filmes não pode ser recadastrado.
 
-    **Exemplo:**
+    Exemplo:
 
     {
-        "nome": "Nome do filme",
+        "nome": "Nome do filme"
     }
 
- ## Deletar filme
+ ### Deletar filme
 
 * **Endpoint:** http://localhost:3000/filmes/:filmeId
 * **MÉTODO:** DELETE
+
 **Aviso:** No endpoint ":filmeId" deve ser substituido pelo id do filme que vai ser deletado.
 
 ## Status: Concluído.
