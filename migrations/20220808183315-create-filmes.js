@@ -9,12 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       nome: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true
       },
       genero_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: 'Generos', key: 'id' }
+        references: {
+          model: {
+            tableName: 'Generos',
+          },
+          key: 'id'
+        },
       },
       deletedAt: {
         allowNull: true,
